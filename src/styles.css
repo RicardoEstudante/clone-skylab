@@ -1,6 +1,8 @@
 body {
     background: rgb(18, 18, 20);
     margin: 0;
+    padding: 0;
+    color: #fff;
 }
 
 button {
@@ -21,7 +23,7 @@ button {
 .container-left {
     width: 317px;
     height: 48px;
-    margin-left: 30px;
+    margin-left: 82px;
 
     display: flex;
     align-items: center;
@@ -51,16 +53,42 @@ button {
 
 .container-left button p {
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
+    font-family: Roboto, serif;
 }
 
 .container-right {
     display: flex;
+    justify-content: space-around;
+    width: 400px;
+    height: 50px;
 
+    align-items: center;
     color: #fff;
-    margin-right: 15px;
+    margin-right: 50px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
     
+}
+
+.name img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 3px solid #000;
 }
 
 .container-right button {
@@ -68,8 +96,12 @@ button {
     background: #202024;
     width: 46px;
     height: 46px;
-    margin: 0;
+    margin-right: 25px;
     padding: 0;
+}
+
+.container-right i img { 
+    width: 30px;
 }
 
 .container-right i {
@@ -77,6 +109,103 @@ button {
     align-items: center;
     justify-content: center;
     color: #A8a8b3;
-    margin: 0;
-    padding: 0;
+    height: 30px;
+    font-size: 17px;
+}
+
+.conteudo {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-left: 197px;
+    margin-top: 100px;
+    width: 75%;
+}
+
+.conteudo h1 {
+    font-family: sans-serif;
+    margin: 30px 0 30px 0;
+}
+
+.tecs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.tecs div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #202024;
+    padding-top: 20px;
+    width: 195px;
+    height: 195px;
+}
+
+#js {
+    border-bottom: 1px solid #F6DA3A;
+}
+#es6 {
+    border-bottom: 1px solid #E16F3C;
+}
+#node {
+    border-bottom: 1px solid #8CC84B;
+}
+#react {
+    border-bottom: 1px solid #2AC7E3;
+}
+#native {
+    border-bottom: 1px solid #5667F9;
+}
+
+
+.tecs div img {
+    width: 80px;
+    border-radius: 2px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 352px;
+    height: 182px;
+    background: #202024;
+    border-radius: 5px
+}
+
+.caixa-menor {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    width: 90%;
+    margin-left: 10px;
+    
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    column-gap: 10%;
+    width: 100%;
+}
+
+.title img {
+    width: 35px;
+}
+
+.caixa-menor p{
+    font-size: 16px;
+    color: rgb(168, 168, 179);
 }
